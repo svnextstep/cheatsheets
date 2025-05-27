@@ -1,0 +1,65 @@
+/*Layout skeleton*/
+* { font-family: inherit; font-size: 12px; margin: 0px; padding: 0px; }
+body,html{height:100%;	background-color: #FFF; }
+body{font-family: Verdana, Arial, Tahoma, Geneva, Helvetica, sans-serif;}
+
+/*common tag styles*/
+.float_left { display: block; float: left; }
+.float_right { display: block; float: right; }
+.float_center{ width: 0px;}
+.clear {clear: both;}
+div.divDelimiter {clear: both; width: 100%; height: 1px; font-size: 1px;}
+.hideBlock {  display: none; }
+.pageContent { border-bottom: none;  width: 950px;  overflow: hidden;}
+.divRight, .divLeft {width: 280px; height-min:500px; padding:10px;}
+.divLeft {width: 650px;}
+
+
+/* menu */
+.menu {padding:10px; width:auto; background-color:#04819E;}
+.menu, .menu a {color:white; font-weight:bold;}
+
+/* content */
+h1 {font-size : 14px; padding: 25px 0 10px;}
+h2, h5 {font-size: 12px; padding: 15px 0 10px;}
+h5 {font-size: 20px;}
+h1, h2, h5 {color: #009999;}
+
+ul {margin:5px;}
+li {margin-left: 15px;}
+
+
+/* tables */
+table  td { border: 1px solid silver; font-size:12px; padding:2px;}
+
+.tblCommonRule tr th, .tblRule tr th {width : 100px;}
+.tblRule tr th {font-weight:normal;}
+.tblRule tr td {font-weight:bold;}
+
+.cellGrey {color:grey; font-size:11px;}
+
+
+
+
+
+.divComment {color:gray; padding: 5px 0 10px 0; font-size: 11px;}
+.sentenceFormLink {cursor:pointer; color: #009999;}
+.divSentenceFormLinks {padding: 20px 0 3px 0;}
+
+
+.popupLink {cursor: pointer;}
+.linkTense {cursor:pointer;}
+.auxilaryVeb, .divFormula { color:#FF7373;}
+.auxilaryVeb {text-decoration:blink;}
+.divFormula {font-size:14px; font-weight:bold;}
+.imgSheme {padding: 5px 0;}
+
+.subj0,.ax0 {height:12px;}
+.subj, .ax, .verb {height:38px;}
+.subj3, .ax3, .verb3 {height:36px;}
+.subj0,.subj,.subj3,.ax0, .ax, .ax3, .verb, .verb3 {width: 90px;  padding:0px; margin:0; font-size :11px;}
+
+
+
+
+

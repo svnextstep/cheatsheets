@@ -1,0 +1,294 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>RULS</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link type="text/css" href="css/_common.css" rel="STYLESHEET" />
+<script type="text/javascript" src="js/js-wrapper.js"></script>
+<script type="text/javascript" src="js/tense.js"></script>
+</head>
+
+<body>
+  <iframe src="menu.html" height="40px" width="100%" frameborder="0"></iframe>
+  <div class="float_left divLeft">
+    <h1>Таблица времен</h1>
+    <!--<div class="divSentenceFormLinks">
+      <span class="sentenceFormLink" id="tobe">Глагол <b>to be</b></span>&nbsp;/&nbsp;
+      <span class="sentenceFormLink" id="verb">Смысловой глагол</span>
+    </div>-->
+    <table width="550" cellpadding="2" cellspacing="0" border="1" id="tblTense">
+      <tr>
+        <th width="20%">&nbsp; </th>
+        <th width="20%">Indefinit</th>
+        <th width="20%"> Continuous</th>
+        <th width="20%"> Perfect</th>
+        <th width="20%"> Perfect Continuous</th>
+      </tr>
+      <tr>
+        <th> Present</th>
+        <td  class="cellGrey"> <span class="linkTense"id="link_iPrInd">Рабочий день</span></td>
+        <td> <span class="linkTense" id="link_iPrC">Телескоп</span></td>
+        <td> <span class="linkTense" id="link_iPrP">Результат</span></td>
+        <td> <span class="linkTense" id="link_iPrPC">3 в 1</span></td>
+      </tr>
+      <tr>
+        <th> Past</th>
+        <td> <span class="linkTense" id="link_iPstInd">Летопись</span></td>
+        <td> <span class="linkTense" id="link_iPstC">Вопросы следователя</span></td>
+        <td> &nbsp; </td>
+        <td> &nbsp;</td>
+      </tr>
+      <tr>
+        <th> Future</th>
+        <td> <span class="linkTense" id="link_iFInd">Спонтанное решение</span></td>
+        <td> &nbsp;</td>
+        <td> &nbsp;</td>
+        <td> &nbsp;</td>
+      </tr>
+    </table>
+
+    <br /><br /><br />
+    <h1>Правило составления предложения</h1>
+    <h5>+</h5>
+        <table class="tblRule" id="pTbl">
+          <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>Подлежащее</th>
+            <th>Всп.гл</th>
+            <th>Глагол</th>
+            <th>Дополнение</th>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+              <div class="subj0">I</div>
+              <div class="subj">you<br />we<br />they<br /></div>
+              <div class="subj3" style="border-top: 1px solid gray;">he<br />she<br />it<br /></div>
+            </td>
+            <td id="p_ax"></td>
+            <td id="p_verb"></td>
+            <td id="p_add"></td>
+          </tr>
+        </table>
+
+        <h5>-</h5>
+        <table class="tblRule" id="nTbl">
+          <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>Подлежащее</th>
+            <th>Всп.гл + not</th>
+            <th>Глагол</th>
+            <th>Дополнение</th>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+              <div class="subj0">I</div>
+              <div class="subj">you<br />we<br />they<br /></div>
+              <div class="subj3" style="border-top: 1px solid gray;">he<br />she<br />it<br /></div>
+            </td>
+            <td id="n_ax"></td>
+            <td id="n_verb"></td>
+            <td id="n_add"></td>
+          </tr>
+        </table>
+
+        <h5>?</h5>
+        <table class="tblRule" id="qTbl">
+          <tr>
+            <th>Вопрос</th>
+            <th>Всп.гл</th>
+            <th>Подлежащее</th>
+            <th>&nbsp;</th>
+            <th>Глагол</th>
+            <th>Дополнение</th>
+          </tr>
+          <tr>
+            <td id="q_qs"></td>
+            <td id="q_ax"></td>
+            <td>
+              <div class="subj">you<br />we<br />they<br /></div>
+              <div class="subj3" style="border-top: 1px solid gray;">he<br />she<br />it<br /></div>
+            </td>
+            <td id="q_ax2"></td>
+            <td id="q_verb"></td>
+            <td id="q_add"></td>
+          </tr>
+        </table>
+  </div>
+  <div class="float_left divRight">
+    <div id="expl_iPrInd" class="hideBlock">
+      <h1>Present Indefinit Tense</h1>
+      <div>
+        <h2>Формула</h2>
+        <div class="divFormula">V(i)</div>
+        <div class="cellGrey">Verb (1я форма)</div>
+        <div class="divFormula">V(i)+"s"</div>
+        <div  class="cellGrey">для 3го лица (he, she, it) <br />Verb (1я форма) + постфикс "s" </div>
+        <h2>Применение</h2>
+        <div class="imgSheme"><img src="image/pr_ind.gif" alt="Present Indefinit Tense" /></div>
+        <ul>
+          <li>Периодически происходящие события (привычка)<br />
+            <span  class="cellGrey">Наречия: always, sometimes. often, never, usually</span>
+          </li>
+          <li>Факт, который всега правдив.<br />Мы родом из Испании, т.е уж если родился там, то это навсегда</li>
+          <li>Факт, являющийся правдой долгое время</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div id="expl_iPrC" class="hideBlock">
+      <h1>Present Continuous Tense</h1>
+      <div>
+        <h2>Формула</h2>
+        <div class="divFormula">to be +V(i) + ing</div>
+        <div class="cellGrey">глагол to be + Verb (1я форма глагола) + постфикс "ing" </div>
+
+        <h2>Применение</h2>
+        <div class="imgSheme"><img src="image/pr_cont.gif" alt="Present Continuous Tense" /></div>
+        <ul>
+          <li>Действие, которое происходит в данный момент (он играет в футбол)</li>
+          <li>Сейчас, но не в момент разговора (она изучает математику в училище)</li>
+          <li>План ближайшего будущего (она начнет заниматься на следующей неделе)</li>
+        </ul>
+      </div>
+    </div>
+    <div id="expl_iPrP" class="hideBlock">
+      <h1>Present Perfect Tense</h1>
+      <div>
+        <h2>Формула</h2>
+        <div class="divFormula">to have +V(iii)</div>
+        <div class="cellGrey">глагол to have + Verb (3я форма глагола)</div>
+
+        <h2>Применение</h2>
+        <div class="imgSheme"><img src="image/pr_pf.gif" alt="Present Perfect Tense" /></div>
+        <ul>
+          <li>ФАКТ. Интерес к случаям в чьей-то жизни (прошедшие события). (Я много путешествовал по Африке)<br />
+              <span class="cellGrey">Наречия: never, already, just, ever, yet, latly</span></li>
+          <li>ПЕРИОД. Действие и состояние, к-рое началось в прошлом и продолжаеться. (Я знаю Анну с 6 лет).<br />
+              <span class="cellGrey">Наречия: for since</span></li>
+
+        </ul>
+        <h2>Характерные вопросы</h2>
+        <div>How long. В этом времени никогда не употребляеться вопрос When.</div>
+      </div>
+    </div>
+    <!-- past tense -->
+    <div id="expl_iPstInd" class="hideBlock">
+      <h1>Past Indefinit Tense</h1>
+      <div>
+        <h2>Формула</h2>
+        <div class="divFormula">V(ii)</div>
+        <div class="cellGrey">Verb (2я форма)</div>
+        <h2>Применение</h2>
+        <div class="imgSheme"><img src="image/ps_ind.gif" alt="Past Indefinit Tense" /></div>
+        <ul>
+          <li>Событие в прошлом<br />
+            <span  class="cellGrey">Наречия: last, from, to, ago</span>
+          </li>
+          <li>События в истории , следующие один за другим. (Рассказ)</li>
+          <li>Факт, являющийся правдой долгое время</li>
+        </ul>
+      </div>
+    </div>
+    <div id="expl_iPstC" class="hideBlock">
+      <h1>Past Continuous Tense</h1>
+      <div>
+        <h2>Формула</h2>
+        <div class="divFormula">to be +V(i) + ing</div>
+        <div class="cellGrey">глагол to be (в прошедшем времени) + Verb (1я форма глагола) + постфикс "ing"</div>
+        <h2>Применение</h2>
+        <div class="imgSheme"><img src="image/ps_cont.gif" alt="Past Continuous Tense" /></div>
+        <ul>
+          <li>Происходящее в прошлом в определенный  период времени.<br />
+            <span  class="cellGrey">Наречия: from, to, while</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="expl_iFInd" class="hideBlock">
+      <h1>Future Indefinit Tense</h1>
+      <div>
+        <h2>Формула</h2>
+        <div class="divFormula">will + V(i)</div>
+        <div class="cellGrey">will + Verb (1я форма)</div>
+        <h2>Применение</h2>
+        <div class="imgSheme"><img src="image/f_ind.gif" alt="Future Indefinit Tense" /></div>
+        <ul>
+          <li>При принятии какого-либо решения в момент раговора (спонтанное решение)<br />
+            'Did you phone Ann?' 'Oh, no, I forgot. I will do it now.'
+          </li>
+          <li>Когда мы говорим о предположениях, что-то произойдет по нашему мнению<br />
+            'Don't worry, Tom. You will pass your examination.'
+          </li>
+          
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hideBlock">
+    <!-- Present -->
+    <div id="rule_iPrInd">
+      <span id="iPrInd_ax">do</span>
+      <span id="iPrInd_ax3">does</span>
+      <span id="iPrInd_verb">drive</span>
+      <span id="iPrInd_postfix">s</span>
+      <span id="iPrInd_bAxInP"></span>
+    </div>
+    <div id="rule_iPrC">
+      <span id="iPrC_ax0">am</span>
+      <span id="iPrC_ax">are</span>
+      <span id="iPrC_ax3">is</span>
+      <span id="iPrC_verb">driv</span>
+      <span id="iPrC_postfix">ing</span>
+      <span id="iPrC_bAxInP">true</span>
+    </div>
+    <div id="rule_iPrP">
+      <span id="iPrP_qs">How long</span>
+      <span id="iPrP_ax">have</span>
+      <span id="iPrP_ax3">has</span>
+      <span id="iPrP_verb">drived</span>
+      <span id="iPrP_bAxInP">true</span>
+    </div>
+    <div id="rule_iPrPC">
+      <span id="iPrPC_ax">have</span>
+      <span id="iPrPC_ax3">has</span>
+      <span id="iPrPC_ax2">been</span>
+      <span id="iPrPC_verb">drived</span>
+      <span id="iPrPC_bAxInP">true</span>
+    </div>
+    <!-- Past -->
+    <div id="rule_iPstInd">
+      <span id="iPstInd_ax">did</span>
+      <span id="iPstInd_verb">drived</span>
+      <span id="iPstInd_verb1">drive</span>
+    </div>
+    <div id="rule_iPstC">
+      <span id="iPstC_ax">were</span>
+      <span id="iPstC_ax3">was</span>
+      <span id="iPstC_verb">driv</span>
+      <span id="iPstC_postfix">ing</span>
+      <span id="iPstC_bAxInP">true</span>
+    </div>
+   <!-- Future -->
+   <div id="rule_iFInd">
+      <span id="iFInd_ax">will</span>
+      <span id="iFInd_verb">drive</span>
+      <span id="iFInd_bAxInP">true</span>
+    </div>
+  </div>
+
+  <script  type="text/javascript">
+  showTenseInfo.init();
+  </script>
+</body>
+</html>
