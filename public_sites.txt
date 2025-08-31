@@ -1,0 +1,18 @@
+
+
+********************** https://github.com/
+
+svetlanakarpuk@gmail.com
+svnextstep
+krow6868
+The following SSH key was added to your account:
+svkey
+SHA256:TX1MHm/QC8zEutpwerzWcv1MJyz8PEeCAOkCGbENmT4
+
+
+----
+project: cheatsheets
+https://github.com/svnextstep/cheatsheets.git
+
+git remote add origin https://github.com/svnextstep/cheatsheets.git
+$ git push -u origin master:main
